@@ -1,6 +1,6 @@
 # Entropy
 ## 1 Introduction
- The toolbox contains implementations of the most popular Shannon entropies, including the calculation of entropy, joint entropy, conditional entropy, mutual information, joint mutual information and conditional mutual information. The toolbox only supports discrete distributions, as for continuous data, we should do discretization beforhand. <font color=#0099ff>One of the advantages of this package is that it is suitable for high-dimensional data, i.e. it can be used to calculate the joint entropy and joint mutual information of many variables</font>.
+ The toolbox contains implementations of the most popular Shannon entropies, including the calculation of entropy, joint entropy, conditional entropy, mutual information, joint mutual information and conditional mutual information. The toolbox only supports discrete distributions, as for continuous data, we should do discretization beforhand. **One of the advantages of this package is that it is suitable for high-dimensional data, i.e. it can be used to calculate the joint entropy and joint mutual information of many variables**.
  
 ## 2 Examples
 ### 2.1 Calculation of entropy.
