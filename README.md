@@ -1,6 +1,6 @@
 # Entropy
 ## 1 Introduction
- The toolbox contains implementations of the most popular Shannon entropies, including the calculation of entropy, joint entropy, conditional entropy, mutual information, joint mutual information and conditional mutual information. The toolbox only supports discrete distributions, as for continuous data, we should do discretization beforhand. **One of the advantages of this package is that it is suitable for high-dimensional data, i.e. it can be used to calculate the joint entropy and joint mutual information of many variables**.
+ The toolbox contains implementations of the most popular Shannon entropies, including the calculation of entropy, joint entropy, conditional entropy, mutual information, joint mutual information and conditional mutual information. The toolbox only supports discrete distributions, as for continuous data, we should do discretization beforhand. <font color=#0099ff>One of the advantages of this package is that it is suitable for high-dimensional data, i.e. it can be used to calculate the joint entropy and joint mutual information of many variables</font>.
  
 ## 2 Examples
 ### 2.1 Calculation of entropy.
@@ -28,15 +28,14 @@
  console: 1.92193
  ```
 ### 2.3 Calculation of conditional entropy.
- Conditional entropy: H(x | y)
- x and y can be more than just a variable. 
+ Conditional entropy: H(x | y), x and y can be more than just a variable. 
  ``` C++
  CConditionalEntropy X_Y(x, y);
  cout << X_Y.getConditionalEntropy() << endl;
  
  console: 0.950978
  ```
-### 4. Calculation of mutual information.
+### 2.4. Calculation of mutual information.
  Mutual information of x and y: I(x ; y)
  ``` C++
  CMutualInformation IXY(x, y);
@@ -44,7 +43,7 @@
  
  console: 0.0199731
  ```
-### 5. Calculation of joint mutual information.
+### 2.5. Calculation of joint mutual information.
  Joint mutual information of x, y and z: I(x, y ; z)
  ``` C++
  vector<int> z = { 1, 1, 0, 1, 0 };
@@ -53,9 +52,8 @@
  
  console: 0.570951
  ```
-### 6. Calculation of conditional mutual information.
- Conditional mutual information of x, y and z: I(x, y | z)
- x and z can be more than just a variable. 
+### 2.6. Calculation of conditional mutual information.
+ Conditional mutual information of x, y and z: I(x, y | z), x and z can be more than just a variable. 
  ``` C++
  CConditionalMutualInformation IXY_Z(x, y, z);
  cout << IXY_Z.getConditionalMutualInformation() << endl;
