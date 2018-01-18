@@ -20,10 +20,10 @@
  Joint entropy of x and y: H(x, y)
  ``` C++
  vector<vector<int>> xy;
-	xy.push_back(x);
-	xy.push_back(y);
-	CEntropy XY(xy);
-	cout << XY.getEntropy() << endl;
+ xy.push_back(x);
+ xy.push_back(y);
+ CEntropy XY(xy);
+ cout << XY.getEntropy() << endl;
  
  console: 1.92193
  ```
@@ -32,7 +32,7 @@
  x and y can be more than just a variable. 
  ``` C++
  CConditionalEntropy X_Y(x, y);
-	cout << X_Y.getConditionalEntropy() << endl;
+ cout << X_Y.getConditionalEntropy() << endl;
  
  console: 0.950978
  ```
@@ -40,7 +40,7 @@
  Mutual information of x and y: I(x ; y)
  ``` C++
  CMutualInformation IXY(x, y);
-	cout << IXY.getMutualInformation() << endl;
+ cout << IXY.getMutualInformation() << endl;
  
  console: 0.0199731
  ```
@@ -48,8 +48,8 @@
  Joint mutual information of x, y and z: I(x, y ; z)
  ``` C++
  vector<int> z = { 1, 1, 0, 1, 0 };
-	CMutualInformation IXYZ(xy, z);
-	cout << IXYZ.getMutualInformation() << endl;
+ CMutualInformation IXYZ(xy, z);
+ cout << IXYZ.getMutualInformation() << endl;
  
  console: 0.570951
  ```
@@ -58,7 +58,7 @@
  x and z can be more than just a variable. 
  ``` C++
  CConditionalMutualInformation IXY_Z(x, y, z);
-	cout << IXY_Z.getConditionalMutualInformation() << endl;
+ cout << IXY_Z.getConditionalMutualInformation() << endl;
  
  console: 0.550978
  ```
