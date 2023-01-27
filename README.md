@@ -53,7 +53,7 @@
  console: 0.570951
  ```
 ### 2.6. Calculation of conditional mutual information.
- Conditional mutual information of x, y and z: I(x, y | z), x and z can be more than just a variable. 
+ Conditional mutual information of x, y and z: I(x, y | z), x and z can be more than one variable. 
  ``` C++
  CConditionalMutualInformation IXY_Z(x, y, z);
  cout << IXY_Z.getConditionalMutualInformation() << endl;
